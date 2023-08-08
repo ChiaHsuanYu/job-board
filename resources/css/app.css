@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.layout-body{
+    @apply mx-auto mt-10 max-w-2xl bg-gradient-to-r from-indigo-100 from-10% via-sky-100 via-30% to-emerald-100 to-90% text-slate-600
+}
+
+.job-card{
+    @apply rounded-md border border-slate-300 bg-white text-slate-600 p-4 shadow-sm
+}
+
+.single-job-box{
+    @apply mb-4 flex justify-between
+}
+
+.job-title{
+    @apply text-lg font-medium
+}
+
+.job-salary{
+    @apply text-slate-500
+}
+
+.job-description{
+    @apply text-sm text-slate-500 mb-4
+}
+
+.job-experience-box{
+    @apply mb-4 flex justify-between text-sm text-slate-500 items-center
+}
+
+.job-company-left{
+    @apply flex items-center space-x-4
+}
+
+.job-company-right{
+    @apply flex space-x-1 text-xs
+}
+
+.job-tag{
+    @apply rounded-md border px-2 py-1
+}
+
+.link{
+    @apply rounded-md border border-slate-300 bg-white px-2.5 py-1.5 text-center text-sm font-semibold text-black shadow-sm hover:bg-slate-100
+}
+
+.nav-ul{
+    @apply flex space-x-3 text-slate-500 items-center
+}
+
+.nav-li{
+    @apply border border-slate-300 bg-slate-500 mx-1 px-1 py-0.5 text-white hover:bg-slate-600 
+}
+
+.arrow{
+    @apply text-slate-700 font-bold
+}
+
+.filter-grid{
+    @apply mb-4 grid grid-cols-2 gap-4
+}
+
+.filter-title{
+    @apply mb-1 font-semibold
+}
+
+.filter-input{
+    @apply w-full rounded-md border-0 py-1.5 px-2.5 text-sm ring-1 placeholder:text-slate-400 focus:ring-2 pr-8
+}
+
+.close_btn{
+    @apply absolute top-0 right-0 flex h-full items-center pr-2
+}
+
+.login_title{
+    @apply my-16 text-center text-4xl font-medium text-slate-600
+}
+
+.login_label{
+    @apply mb-2 block text-sm text-slate-900 font-bold
+}
+
+.login_fun_box{
+    @apply mb-8 flex justify-between text-sm font-medium
+}
+
+.login_forget{
+    @apply text-indigo-600 hover:underline
+}
+
+.login_checkbox{
+    @apply rounded-sm border border-slate-400
+}
+
+.nav_box{
+    @apply mb-8 flex items-center justify-between text-lg font-medium
+}
+
+.success_msg{
+    @apply my-8 rounded-md border-l-4 border-green-300 bg-green-100 p-4 text-green-700 opacity-75
+}
+
+.error_msg{
+    @apply my-8 rounded-md border-l-4 border-red-300 bg-red-100 p-4 text-red-700 opacity-75
+}
+
+.my_job_info_box{
+    @apply flex items-center justify-between text-xs text-slate-500
+}
+
+.no_job_box{
+    @apply rounded-md border border-dashed border-slate-300 p-8
+}
