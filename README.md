@@ -6,6 +6,11 @@
 npm install
 composer install
 
+# 建置資料庫
+php artisan migrate:refresh --seed
+
+# 自行去更改.env的資料庫連線資訊
+
 # 啟動tailwindcss
 npm run dev
 
