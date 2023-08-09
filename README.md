@@ -6,6 +6,9 @@
 npm install
 composer install
 
+# 透過artisan產生一組網站專屬密鑰
+php artisan key:generate
+
 # 建置資料庫
 php artisan migrate:refresh --seed
 
