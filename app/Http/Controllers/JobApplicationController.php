@@ -39,10 +39,10 @@ class JobApplicationController extends Controller
             'cv' => 'required|file|mimes:pdf|max:3072'
         ]);
         $file = $request->file('cv');
+        
+        $result = $this->myJobApplicationService->create_job_application_by_userid($job,$validatedData,$file);
 
-        $result = $this->myJobApplicationService->create_job_application_by_userid($validatedData,$file);
-
-        return redirect()->route('jobs.show')->with(
+        return redirect()->route('jobs.show', $job)->with(
             $result ? 'success' :  'error',
             __($result ? 'Job application submitted.' : 'Job application store fail.')
         );

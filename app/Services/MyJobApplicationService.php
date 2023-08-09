@@ -21,10 +21,11 @@ class MyJobApplicationService{
     }
 
     // 新增職缺申請資料 by userId
-    public function create_job_application_by_userid($data,$file){
+    public function create_job_application_by_userid($job,$data,$file){
         $user = auth()->user();
         $path = $file->store('cvs', 'private');
-        $result = $this->jobModel->jobApplications()->create([
+        
+        $result = $job->jobApplications()->create([
             'user_id' => $user->id,
             'expected_salary' => $data['expected_salary'],
             'cv_path' => $path
